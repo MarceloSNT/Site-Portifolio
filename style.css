@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+:root {
+  --blueMarine: #213c82;
+  --blueMarineLight: #3c5db1;
+  --black: #000000;
+  --white: #ffffff;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+/*MENU NAVEGAÇÃO | MENU NAVEGATION*/
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 999;
+}
+
+/*SEÇÃO INICIO | SECTION HOME*/
+#inicio {
+  text-align: center !important;
+  background-image: url(img/Sobre\ Mim\.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#inicio h3 {
+  color: var(--blueMarineLight);
+}
+
+/*SEÇÃO SOBRE MIM | SECTION ABOUT ME*/
+#sobreMim {
+  background-color: var(--black);
+}
+#Sobre {
+  background-color: var(--blueMarine);
+  border-radius: 15px;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+li {
+  list-style: none;
+}
+.container {
+  background-color: var(--blueMarine);
+  width: 300px;
+  border-radius: 15px;
+}
+.logos {
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.logos ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: 5s infinite slide linear;
+}
+.logos img {
+  width: 150px;
+}
+
+#contato img:hover{
+    border-radius: 15px;
+  transform: translate(4px, -5px);
+  box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.295);
+  transition: 0.5s;
+}
+
+/*SEÇÃO PROJETOS*/
+#projetos {
+  text-align: center !important;
+  background-image: url(img/Sobre\ Mim\ \(1\).png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  border-radius: 15px;
+  background: var(--black);
+}
+.card:hover {
+  transform: translate(4px, -5px);
+  box-shadow: -4px 5px 15px rgba(121, 120, 120, 0.137);
+  transition: 0.5s;
+}
+.card a {
+  height: 150px;
+}
+.card-title {
+  color: var(--blueMarine);
+}
+.card img {
+  height: 150px;
+  width: 100%;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-title {
+  border-top: 2px solid var(--black);
+}
+
+/*SEÇÃO RESPONSIVIDADE | SECTION RESPONSIVITY*/
+@media screen and (min-width: 600px) {
+  #inicio {
+    text-align: start !important;
+
+    background-image: url(img/Sobre\ Mim.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    background-color: var(--blueMarine);
+    width: 500px;
+    border-radius: 15px;
+  }
+  .logos {
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 890px) {
+  #inicio {
+    text-align: start !important;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    background-image: url(img/Sobre\ Mim.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    background-color: var(--blueMarine);
+    width: 700px;
+    border-radius: 15px;
+  }
+  .logos {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+/*SEÇÃO ANIMAÇÕES | SECTION ANIMATIONS*/
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-1600px);
+  }
+}
