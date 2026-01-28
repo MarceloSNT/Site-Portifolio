@@ -1,125 +1,286 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dev Marcelo</title>
+  </head>
+  <body>
+    <header
+      class="d-flex flex-row justify-content-evenly aling-items-center py-3"
     >
-    <link rel="stylesheet" href="style.css">
-    <title>Portifólio</title>
-</head>
-<body>
-    <nav class="menuInicio text-center p-2 vw-100">
-        <a href="#inicio" class="menuInicio text-decoration-none link-light">Inicio |</a>
-        <a href="#sobreMim" class="menuInicio text-decoration-none link-light">Sobre Mim |</a>
-        <a href="#projetos" class="menuInicio text-decoration-none link-light">Projetos |</a>
-        <a href="#contato" class="menuInicio text-decoration-none link-light">Contato</a>
-    </nav>
-        <section id="inicio" class="px-3 pt-5 min-vh-100 w-100">
-            <h1>Marcelo dos Santos Machado</h1>
-            <h3>Desenvolvedor Fullstack</h3>
-        </section>
-        <section id="sobreMim" class="px-5 pt-5 min-vh-100 w-100">
-            <div id="Sobre" class="p-3">
-                <h2 class="text-center">Sobre Mim</h2>
-                <p class="text-center">Olá, me chamo Marcelo, sou apaixonado por  desenvolvedor Fullstack. Atualmente estou no curso Análise e Desenvolvimento de Sistemas(ADS) pela Unisul, tenho conhecimentos em HTML, CSS, Java, Javascript, Bootstrap, MySQL e PostgreSQL. <br>
-                Desde muito novo tive vontade de aprender desenvolvimento de software e games, venho me aprimorando e estudando tecnologias e ferramentas para resolução de problemas. <br> 
-                Sou uma pessoa dedicada, comunicativa e que gosta de trabalhar em equipe. Estou sempre buscando aprender coisas novas e me aprimorar cada vez mais na área de desenvolvimento. Fora do ambiente profissional, gosto de práticar esportes e jogar video-game, ler livros de ficção científica, assistir séries e filmes. </p>
-            <div class="container">
-                <div class="logos">
-                    <ul>
-                        <li>
-                            <img src="img/html5.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/css3.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/js.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/bootstrap.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/java.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/spring-boot.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/mysql.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/postgre.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/intellij.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/git.png" alt="">
-                        </li>
-                         <li>
-                            <img src="img/html5.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/css3.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/js.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/bootstrap.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/java.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/spring-boot.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/mysql.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/postgre.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/intellij.png" alt="">
-                        </li>
-                        <li>
-                            <img src="img/git.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <div id="contato" class="p-3 text-center mt-5 mb-3">
-                    <h3 class="text-center">Contato</h3>
-                    <a href="https://www.instagram.com/marcel0snt?igsh=MXFqMnU0amgwbHdsZg%3D%3D&utm_source=qr"><img src="img/instagram.png" alt="instagram pessoal"></a>
-                    <a href="https://www.instagram.com/marcel0.snt?igsh=bzQ4dHhxbDVxNXJh&utm_source=qr"><img src="img/instagram.png" alt="instagram profissional"></a>
-                    <a href="https://www.linkedin.com/in/marcelo-dos-santos-machado-214923318/"><img src="img/linkedin.png" alt="linkedin"></a>
-                </div>
+      <a href="#home" class="link-underline link-underline-opacity-0">
+        <img src="img/euTerno.png" alt="" id="home-link" />
+      </a>
+      <a href="#about-me" class="link-underline link-underline-opacity-0">
+        <p>Sobre mim</p>
+      </a>
+      <a href="#projects" class="link-underline link-underline-opacity-0">
+        <p>Projetos</p>
+      </a>
+      <a href="#tools" class="link-underline link-underline-opacity-0">
+        <p>Tecnologias</p>
+      </a>
+      <a href="#contact" class="link-underline link-underline-opacity-0">
+        <p>Contatos</p>
+      </a>
+    </header>
+    <main class="min-vh-100 p-5 pb-0" id="home">
+      <div class="text-center">
+        <h1>Hello World!</h1>
+        <h1>Sou o Marcelo</h1>
+        <h3 class="mx-auto">Dev Fullstack</h3>
+        <p>
+          Bem-vindo ao meu portfólio! Aqui compartilho projetos e soluções com
+          foco em desenvolvimento Fullstack. Fique à vontade para explorar meu
+          trabalho e conhecer minha trajetória.
+        </p>
+      </div>
+      <div class="d-flex">
+        <img src="img/euTerno.png" alt="Marcelo foto" class="mx-auto" />
+      </div>
+    </main>
+    <section id="about-me" class="min-vh-100 p-3 text-center">
+      <div>
+        <img src="img/marcelo.jpeg" alt="" class="d-none" />
+      </div>
+      <div>
+        <h1>[ <strong>Sobre mim</strong> ]</h1>
+        <p>
+          Sou estudante de Análise e Desenvolvimento de Sistemas pela Unisul,
+          com grande paixão por desenvolvimento de software e constante
+          interesse em evoluir tecnicamente. Ao longo da minha formação, venho
+          adquirindo sólidos conhecimentos em Java, Spring Boot, SQL e Angular,
+          sempre aplicando boas práticas de programação, organização de código e
+          foco em qualidade. Tenho perfil proativo, organizado e facilidade para
+          aprender novas tecnologias, além de gostar de trabalhar em equipe e
+          colaborar na resolução de problemas. Busco compreender não apenas a
+          implementação, mas também a lógica de negócio e a arquitetura por trás
+          das aplicações, com atenção especial ao desenvolvimento back-end.
+          Possuo experiência em desenvolvimento full stack, utilizando Java com
+          Spring Boot, Angular, PostgreSQL e versionamento com Git. Participo
+          ativamente de projetos acadêmicos e estudo diariamente para me
+          especializar cada vez mais em back-end, criando soluções eficientes,
+          seguras e escaláveis.
+        </p>
+      </div>
+    </section>
+    <section id="projects" class="min-vh-100 p-3 text-center">
+      <h1>[ <strong>Projetos</strong> ]</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card p-2">
+            <a
+              href="https://github.com/MarceloSNT/LojaEcommerceVivalis-Front-end"
+              ><img src="img/vivalisPrint.png" class="card-img" alt="..."
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Vivalis</h5>
+              <p class="card-text">
+                Participei como <strong>desenvolvedor front-end</strong> no
+                projeto acadêmico <strong>Loja E-commerce Vivalis</strong>,
+                minha primeira experiência prática no desenvolvimento de um
+                e-commerce e em trabalho em equipe. Atuei na construção das
+                interfaces e funcionalidades da loja, contribuindo com o
+                catálogo de produtos, navegação e estrutura do site. A
+                experiência fortaleceu meus conhecimentos em
+                <strong> versionamento com Git/GitHub </strong> e em
+                <strong> colaboração em projetos reais </strong>.
+              </p>
             </div>
-        </section>
-        <section id="projetos" class="px-5 pt-5 min-vh-100 w-100">
-            <h2 class="text-center">Projetos</h2>
-            <div class="row text-center d-flex justify-content-evenly">
-                <div class="card col-md-4 col-lg-3 my-2 mx-2 p-0">
-                    <a href="https://e-commercevivalis.netlify.app/"><img src="img/vivalisPrint.png" alt="IMAGEM DO PROJETO VIVALIS"></a>
-                    <h3 class="card-title mt-2">E-commerce Vivalis</h3>
-                    <div class="descProj p-3">Loja virtual de cosméticos,organizada por categorias claras. Layout limpo e minimalista com navegação intuitiva, que ressalta os produtos.
-                    Informação de suporte visível, transmitindo confiança.
-                    Implantação eficiente via Netlify, garantindo performance e deploy ágil.
-                    Design responsivo e estrutura moderna ideal para uma experiência de e-commerce profissional.</div>
-                </div>
-                <div class="card col-md-4 col-lg-3 my-2 p-0">
-                    <a href="https://sistemapedidosdelivery.netlify.app/"><img src="img/sistemaPedidosPrint.png" alt=""></a>
-                    <h3 class="card-title mt-2">Sistema de Pedidos</h3>
-                    <div class="descProj p-3">Plataforma de pedidos online com interface limpa e imagens ilustrativas que valorizam os produtos. Permite adicionar itens ao carrinho de forma intuitiva, sugerindo uma experiência de compra simplificada.Design enxuto e focado no usuário, com visual minimalista e navegação direta até a finalização do pedido.Interface responsiva e moderna, ideal para lojas de entrega ou comércio rápido.
-                    Implantado via Netlify, destacando-se por seu deploy ágil e boa performance em sites estáticos.</div>
-                </div>
+            <div class="card-footer">
+              <p class="badge px-3">Javascript</p>
+              <p class="badge px-3">Html</p>
+              <p class="badge px-3">Css</p>
+              <p class="badge px-3">Bootstrap</p>
             </div>
-        </section>
-</body>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-2">
+            <a href="https://github.com/MarceloSNT/Sistema_de_Pedidos"
+              ><img
+                src="img/sistemaPedidosPrint.png"
+                class="card-img"
+                alt="..."
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Delivery Delícias & Cia</h5>
+              <p class="card-text">
+                Desenvolvi individualmente o projeto acadêmico Sistema de
+                Pedidos, com foco na criação de uma aplicação web para simular o
+                fluxo de pedidos. Fui responsável por toda a estrutura e
+                funcionalidades do sistema, organizando meu tempo para planejar
+                e executar cada etapa do desenvolvimento. O projeto utilizou
+                HTML(estrutura) e Bootstrap(estilização) na construção das
+                páginas, enquanto o CSS foi aplicado apenas para animação do
+                banner e dimensionamento de imagens e cards, garantindo uma
+                interface funcional e bem estruturada.
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="badge px-3">Javascript</p>
+              <p class="badge px-3">Html</p>
+              <p class="badge px-3">Css</p>
+              <p class="badge px-3">Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-2">
+            <a href="https://github.com/NeoTechTrier/FrontEnd"
+              ><img src="img/NeoTech.jpg" class="card-img" alt="..."
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">E-commerce NeoTech</h5>
+              <p class="card-text">
+                Atuei como responsável pelo
+                <strong>front-end completo</strong> desse projeto acadêmico,
+                cuidando da construção das interfaces e da experiência do
+                usuário. Também realizei a integração entre o front-end e o
+                back-end utilizando FETCH no JS, garantindo que a comunicação
+                entre as partes funcionasse corretamente. Para isso, fiz
+                pequenos ajustes no back-end quando necessário, assegurando que
+                todo o sistema rodasse de forma estável e alinhada aos
+                requisitos do projeto. A experiência reforçou minha autonomia,
+                organização e visão de projeto completo.
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="badge px-3">Javascript</p>
+              <p class="badge px-3">Html</p>
+              <p class="badge px-3">Css</p>
+              <p class="badge px-3">Bootstrap</p>
+              <p class="badge px-3">Java</p>
+              <p class="badge px-3">PostgreSQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-2">
+            <a href="https://github.com/KON-Support"
+              ><img src="img/KonSupport.jpg" class="card-img" alt="..."
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">KonSupport - Helpdesk</h5>
+              <p class="card-text">
+                Participei do projeto KON Support atuando em back-end e
+                front-end, colaborando com a equipe no desenvolvimento das
+                funcionalidades do sistema. Fui responsável pela implementação
+                do SLA, garantindo o controle de prazos e a organização dos
+                atendimentos dentro do sistema. Também contribuí com ajustes e
+                melhorias nas funcionalidades para manter a qualidade das
+                entregas. A experiência fortaleceu minhas habilidades de
+                trabalho em equipe, organização e responsabilidade em projetos
+                reais.
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="badge px-3">Html</p>
+              <p class="badge px-3">Css</p>
+              <p class="badge px-3">Bootstrap</p>
+              <p class="badge px-3">Java</p>
+              <p class="badge px-3">PostgreSQL</p>
+              <p class="badge px-3">Angular</p>
+              <p class="badge px-3">Typescript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tools" class="min-vh-100 p-3 text-center">
+      <h1>[ <strong>Tecnologias</strong> ]</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col col-md-3">
+          <div class="card p-2">
+            <div class="card-header">
+              <h5 class="card-title">Backend</h5>
+            </div>
+            <div class="card-body">
+              <img src="img/java.png" alt="" class="img" />
+              <img src="img/spring-boot.png" alt="" class="img" />
+              <img src="img/nodejs.png" alt="" class="img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-3">
+          <div class="card p-2">
+            <div class="card-header">
+              <h5 class="card-title">Frontend</h5>
+            </div>
+            <div class="card-body">
+              <img src="img/css3.png" alt="" class="img" />
+              <img src="img/html5.png" alt="" class="img" />
+              <img src="img/bootstrap.png" alt="" class="img" />
+              <img src="img/js.png" alt="" class="img" />
+              <img src="img/typescript.png" alt="" />
+              <img src="img/angular.png" alt="" class="img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-3">
+          <div class="card p-2">
+            <div class="card-header">
+              <h5 class="card-title">Banco de dados</h5>
+            </div>
+            <div class="card-body">
+              <img src="img/mysql.png" alt="" class="img" />
+              <img src="img/postgresql.png" alt="" class="img" />
+              <img src="img/dbeaver.png" alt="" class="img rounded-circle" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-3">
+          <div class="card p-2">
+            <div class="card-header">
+              <h5 class="card-title"><strong>Ferramentas</strong></h5>
+            </div>
+            <div class="card-body">
+              <img src="img/intellij-idea.png" alt="" class="img" />
+              <img src="img/vscode.jpg" alt="" class="img rounded-circle" />
+              <img src="img/git.png" alt="" class="img" />
+              <img src="img/trello.png" alt="" class="img" />
+              <img src="img/insomnia.png" alt="" class="img rounded-circle" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="min-vh-50 p-3 text-center">
+      <div>
+        <h3 class="fw-bold">Vamos trabalhar juntos!</h3>
+        <p>Contatos</p>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/marcelo-dos-santos-machado-214923318/"
+            ><img src="img/linkedin.png" alt="" class="img"
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B5548996016760&text&type=phone_number&app_absent=0"
+            ><img src="img/whatsapp.png" alt="" class="img"
+          /></a>
+          <a href="https://github.com/MarceloSNT"
+            ><img src="img/git.png" alt="" class="img"
+          /></a>
+          <a
+            href="https://www.instagram.com/marcel0.snt?igsh=bzQ4dHhxbDVxNXJh&utm_source=qr"
+            ><img src="img/instagram.png" alt="" class="img"
+          /></a>
+        </div>
+      </div>
+      <div class="pt-5 pb-0">
+        <p>Direitos reservados! &copy;Marcelo</p>
+      </div>
+    </footer>
+  </body>
 </html>
