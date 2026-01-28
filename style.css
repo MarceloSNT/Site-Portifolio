@@ -1,159 +1,203 @@
 @charset "UTF-8";
 
 :root {
-  --blueMarine: #213c82;
-  --blueMarineLight: #3c5db1;
-  --black: #000000;
-  --white: #ffffff;
+  --BlueDeep: #000859;
+  --BlueMedium: #1e2a8a;
+  --BlueLight: #3f5ef5;
+  --Orange: #fd4300;
+  --WhiteSoft: #f7f7ff;
+  --Black: #000000;
+  --DarkGray: #1a1a1a;
 }
 * {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--white);
+  color: #f7f7ff;
+  scroll-behavior: smooth;
 }
-/*MENU NAVEGAÇÃO | MENU NAVEGATION*/
-nav {
-  background-color: rgba(0, 0, 0, 0.5);
+
+header {
   position: fixed;
+  width: 100vw;
   z-index: 999;
+
+  background: rgba(255, 255, 255, 0.158);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
-/*SEÇÃO INICIO | SECTION HOME*/
-#inicio {
-  text-align: center !important;
-  background-image: url(img/Sobre\ Mim\.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: cover;
+header > a > p:hover {
+  text-decoration: underline;
 }
-#inicio h3 {
-  color: var(--blueMarineLight);
+header > a > #home-link {
+  border-radius: 50%;
+  height: 25px;
 }
 
-/*SEÇÃO SOBRE MIM | SECTION ABOUT ME*/
-#sobreMim {
-  background-color: var(--black);
+main {
+  background-color: #1e2a8a;
 }
-#Sobre {
-  background-color: var(--blueMarine);
-  border-radius: 15px;
-  padding: 3px;
-  margin-bottom: 5px;
+main > div {
+  padding-top: 40px !important;
 }
-li {
-  list-style: none;
+main > div > h1 {
+  font-weight: bolder;
 }
-.container {
-  background-color: var(--blueMarine);
-  width: 300px;
-  border-radius: 15px;
-}
-.logos {
-  width: 300px;
-  margin: 0 auto;
+main > div > h3 {
+  white-space: nowrap;
   overflow: hidden;
+  border-right: 10px solid;
+  width: 12ch;
+  animation:
+    typing 2s steps(13),
+    blink 0.5s infinite step-end;
+  color: #fd4300;
 }
-.logos ul {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  animation: 5s infinite slide linear;
-}
-.logos img {
-  width: 150px;
-}
-
-#contato img:hover{
-    border-radius: 15px;
-  transform: translate(4px, -5px);
-  box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.295);
-  transition: 0.5s;
+main > div > img {
+  height: 350px !important;
+  width: auto !important;
 }
 
-/*SEÇÃO PROJETOS*/
-#projetos {
-  text-align: center !important;
-  background-image: url(img/Sobre\ Mim\ \(1\).png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: cover;
+#about-me {
+  padding-top: 100px !important;
+  background-color: #1a1a1a;
 }
-.card {
-  border-radius: 15px;
-  background: var(--black);
-}
-.card:hover {
-  transform: translate(4px, -5px);
-  box-shadow: -4px 5px 15px rgba(121, 120, 120, 0.137);
-  transition: 0.5s;
-}
-.card a {
-  height: 150px;
-}
-.card-title {
-  color: var(--blueMarine);
-}
-.card img {
-  height: 150px;
-  width: 100%;
-
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.card-title {
-  border-top: 2px solid var(--black);
+#about-me > div > h1 {
+  margin-bottom: 35px !important;
+  color: #3f5ef5;
+  font-weight: bold;
 }
 
-/*SEÇÃO RESPONSIVIDADE | SECTION RESPONSIVITY*/
-@media screen and (min-width: 600px) {
-  #inicio {
-    text-align: start !important;
-
-    background-image: url(img/Sobre\ Mim.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .container {
-    background-color: var(--blueMarine);
-    width: 500px;
-    border-radius: 15px;
-  }
-  .logos {
-    width: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+#projects {
+  padding-top: 100px !important;
+  background-color: #1e2a8a;
 }
-@media screen and (min-width: 890px) {
-  #inicio {
-    text-align: start !important;
+#projects > h1 {
+  margin-bottom: 35px !important;
+  color: #fd4300;
+  font-weight: bold;
+}
+#projects > div > div > .card {
+  height: 100%;
+  background-color: #1a1a1a;
+  box-shadow: -5px 5px 5px #000000;
+  color: #f7f7ff !important;
+}
+#projects > div > div > .card > a > .card-img {
+  min-height: 250px !important;
+}
+#projects > div > div > .card > .card-body {
+  min-height: 300px;
+}
+#projects > div > div > .card > .card-body > p {
+  font-size: 0.8em;
+}
+#projects > div > div > .card > .card-body > .card-title {
+  color: #3f5ef5 !important;
+  font-weight: bold;
+}
+#projects > div > div > .card > .card-footer > .badge {
+  background-color: #3f5ef5;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+#tools {
+  padding-top: 100px !important;
+  background-color: #1a1a1a;
+}
+#tools > h1 {
+  margin-bottom: 35px !important;
+  color: #3f5ef5;
+  font-weight: bold;
+}
+#tools > div > div > .card > .card-body > .img {
+  margin-bottom: 10px;
+  height: 50px !important;
+  width: 50px !important;
+}
+#tools > div > div > .card {
+  background-color: #1e2a8a !important;
+  color: #f7f7ff;
+  min-height: 300px;
+  box-shadow: -5px 5px 5px #000000;
+}
+#tools > div > div > .card > .card-header {
+  min-height: 70px !important;
+}
+
+#contact {
+  padding-top: 100px;
+  background-color: #1e2a8a;
+  color: #f7f7ff;
+}
+#contact > div > div > a > .img {
+  background-color: #1a1a1a;
+  padding: 5px;
+  border-radius: 50%;
+  height: 50px !important;
+  width: 50px !important;
+  margin: 0px 15px;
+}
+
+@media screen and (min-width: 720px) {
+  main {
     display: flex;
-    flex-flow: column;
+    flex-flow: row nowrap;
     justify-content: center;
-
-    background-image: url(img/Sobre\ Mim.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    align-items: center;
   }
-  .container {
-    background-color: var(--blueMarine);
-    width: 700px;
-    border-radius: 15px;
+  main > .text-center {
+    width: 25%;
   }
-  .logos {
-    width: 700px;
-    margin: 0 auto;
+  main > div > h1,
+  main > div > h3,
+  main > div > p {
+    text-align: start !important;
+  }
+  main > div > h3 {
+    white-space: nowrap;
     overflow: hidden;
+    border-right: 5px solid;
+    width: 100% !important;
+    animation:
+      typing 2s steps(13),
+      blink 0.5s infinite step-end;
+    color: #fd4300;
+  }
+  #about-me {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-me > div {
+    width: 50vw;
+  }
+  #about-me > div > div {
+    width: 50vw;
+  }
+  #about-me > div > img {
+    height: 500px !important;
+    width: auto;
+    display: block !important;
+    box-shadow: -5px 5px 5px #000000;
+    border-radius: 10%;
+    margin: auto;
   }
 }
 
-/*SEÇÃO ANIMAÇÕES | SECTION ANIMATIONS*/
-@keyframes slide {
+@keyframes typing {
   from {
-    transform: translate(0);
+    width: 0;
   }
   to {
-    transform: translate(-1600px);
+    width: 12ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
