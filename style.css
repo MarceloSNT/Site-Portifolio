@@ -39,7 +39,14 @@ header > a > #home-link {
   cursor: pointer;
   margin-left: 15px;
 }
-
+#curriculo {
+  text-decoration: none;
+  color: var(--WhiteSoft);
+  font-weight: bold;
+}
+#curriculo:hover {
+  text-decoration: underline;
+}
 main {
   background-color: #1e2a8a;
 }

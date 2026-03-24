@@ -1,5 +1,3 @@
-const { title } = require("process");
-
 function traduzirEn() {
   aboutme = document.getElementById("about-me-text");
   homeText = document.getElementById("home-text");
@@ -27,12 +25,13 @@ function traduzirEn() {
 
   phraseContact = document.getElementById("phrase-contact");
   footerRights = document.getElementById("footer-rights");
+  curriculo = document.getElementById("curriculo");
 
   aboutme.innerText =
     "I am a Systems Analysis and Development student at Unisul, with a great passion for software development and a constant interest in evolving technically. Throughout my education, I have been actively involved in various projects that have allowed me to apply my knowledge and skills in real-world scenarios. I am eager to continue learning and growing as a developer, always seeking new challenges and opportunities to expand my expertise.";
 
   homeText.innerText =
-    "Welcome to my portfolio! Here I share projects and solutions focused on Fullstack development. Feel free to explore my work and get to know my journey.";
+    "Welcome to my portfolio! Here I share projects and solutions focused on Backend and Fullstack development. Feel free to explore my work and get to know my journey.";
 
   homeName.innerText = "I'm Marcelo";
 
@@ -65,6 +64,7 @@ function traduzirEn() {
 
   phraseContact.innerText = "Let's work together!";
   footerRights.innerText = "All rights reserved! " + "\u00A9" + " Marcelo";
+  curriculo.innerText = "Resume";
 }
 
 function traduzirPt() {
@@ -94,6 +94,7 @@ function traduzirPt() {
 
   phraseContact = document.getElementById("phrase-contact");
   footerRights = document.getElementById("footer-rights");
+  curriculo = document.getElementById("curriculo");
 
   aboutme.innerText =
     "Sou estudante de Análise e Desenvolvimento de Sistemas pela Unisul, com grande paixão por desenvolvimento de software e constante interesse em evoluir tecnicamente. Ao longo da minha formação, venho adquirindo sólidos conhecimentos em Java, Spring Boot, SQL e Angular, sempre aplicando boas práticas de programação, organização de código e foco em qualidade. Tenho perfil proativo, organizado e facilidade para aprender novas tecnologias, além de gostar de trabalhar em equipe e colaborar na resolução de problemas. Busco compreender não apenas a implementação, mas também a lógica de negócio e a arquitetura por trás das aplicações, com atenção especial ao desenvolvimento back-end. Possuo experiência em desenvolvimento full stack, utilizando Java com Spring Boot, Angular, PostgreSQL e versionamento com Git. Participo ativamente de projetos acadêmicos e estudo diariamente para me especializar cada vez mais em back-end, criando soluções eficientes, seguras e escaláveis.";
@@ -132,4 +133,19 @@ function traduzirPt() {
 
   phraseContact.innerText = "Vamos trabalhar juntos!";
   footerRights.innerText = "Direitos reservados! " + "\u00A9" + " Marcelo";
+  curriculo.innerText = "Currículo";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const flag = document.querySelector(".flags-translate");
+
+  flag.addEventListener("click", function () {
+    if (flag.src.includes("brasil-flag.png")) {
+      flag.src = "img/eua-flag.png";
+      traduzirEn();
+    } else {
+      flag.src = "img/brasil-flag.png";
+      traduzirPt();
+    }
+  });
+});
