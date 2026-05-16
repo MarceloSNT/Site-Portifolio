@@ -7,6 +7,7 @@ function traduzirEn() {
   project2 = document.getElementById("project-2");
   project3 = document.getElementById("project-3");
   project4 = document.getElementById("project-4");
+  project5 = document.getElementById("project-5");
 
   headerAboutMe = document.getElementById("header-about-me");
   headerProjects = document.getElementById("header-projects");
@@ -47,6 +48,9 @@ function traduzirEn() {
   project4.innerText =
     "I participated in the KON Support project working on both back-end and front-end, collaborating with the team in developing the system's functionalities. I was responsible for implementing features that enhanced the user experience and contributed to the overall functionality of the helpdesk system. This project provided me with valuable experience in full-stack development and allowed me to work in a collaborative environment, contributing to the success of the project.";
 
+  project5.innerText =
+    "I independently developed the fullstack project Pricefy, focused on creating a web application for comparing prices across different markets and generating optimized shopping lists. I was responsible for the entire structure and functionality of the system, from planning to the complete development of the application. On the backend, I used Java and Spring Boot to build the REST API, implement JWT authentication, and integrate with a PostgreSQL database. On the frontend, I developed the interfaces and handled all communication with the API, ensuring a functional and dynamic user experience. This project strengthened my autonomy, organization, and fullstack development skills.";
+
   subtitleBackend.innerText = "Backend";
   subtitleFrontend.innerText = "Frontend";
   subtitleDatabase.innerText = "Database";
@@ -76,6 +80,7 @@ function traduzirPt() {
   project2 = document.getElementById("project-2");
   project3 = document.getElementById("project-3");
   project4 = document.getElementById("project-4");
+  project5 = document.getElementById("project-5");
 
   headerAboutMe = document.getElementById("header-about-me");
   headerProjects = document.getElementById("header-projects");
@@ -115,6 +120,9 @@ function traduzirPt() {
 
   project4.innerText =
     "Participei do projeto KON Support atuando em back-end e front-end, colaborando com a equipe no desenvolvimento das funcionalidades do sistema. Fui responsável pela implementação de recursos que melhoraram a experiência do usuário e contribuíram para a funcionalidade geral do sistema de helpdesk. Este projeto me proporcionou uma valiosa experiência em desenvolvimento full-stack e me permitiu trabalhar em um ambiente colaborativo, contribuindo para o sucesso do projeto.";
+
+  project5.innerText =
+    "Desenvolvi individualmente o projeto fullstack Pricefy, com foco na criação de uma aplicação web para comparação de preços entre mercados e geração de listas de compras otimizadas. Fui responsável por toda a estrutura e funcionalidades do sistema, desde o planejamento até o desenvolvimento comp aplicação. No backend, utilizei Java e Spring Boot para construção da API REST, autenticação co integração com banco de dados PostgreSQL. Já no frontend, desenvolvi as interfaces e realizei toda a comunica a API, garantindo uma experiência funcional e dinâmica para o usuário. O projeto reforço autonomia, organização e visão de desenvolvimento fullstack.";
 
   subtitleBackend.innerText = "Backend";
   subtitleFrontend.innerText = "Frontend";
