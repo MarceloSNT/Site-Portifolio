@@ -8,6 +8,7 @@ function traduzirEn() {
   project3 = document.getElementById("project-3");
   project4 = document.getElementById("project-4");
   project5 = document.getElementById("project-5");
+  project6 = document.getElementById("project-6");
 
   headerAboutMe = document.getElementById("header-about-me");
   headerProjects = document.getElementById("header-projects");
@@ -51,6 +52,9 @@ function traduzirEn() {
   project5.innerText =
     "I independently developed the fullstack project Pricefy, focused on creating a web application for comparing prices across different markets and generating optimized shopping lists. I was responsible for the entire structure and functionality of the system, from planning to the complete development of the application. On the backend, I used Java and Spring Boot to build the REST API, implement JWT authentication, and integrate with a PostgreSQL database. On the frontend, I developed the interfaces and handled all communication with the API, ensuring a functional and dynamic user experience. This project strengthened my autonomy, organization, and fullstack development skills.";
 
+  project6.innerText =
+    "I individually developed the Scheduling Project, focusing on creating an API for experimentation and consolidating knowledge in Java, Spring Boot, and JUnit. I was responsible for the entire structure and functionality of the system, from planning to the complete implementation of the application. On the backend, I used Spring Boot to build the REST API, authentication with JWT, and integration with the PostgreSQL database. I also explored LocalDate and LocalTime for handling dates and times in real-world scenarios, while applying best practices in automated testing to ensure quality and code coverage. The project strengthened my autonomy, organization, and backend development vision, serving as a learning laboratory that can be expanded into more complex applications in the future.";
+
   subtitleBackend.innerText = "Backend";
   subtitleFrontend.innerText = "Frontend";
   subtitleDatabase.innerText = "Database";
@@ -81,6 +85,7 @@ function traduzirPt() {
   project3 = document.getElementById("project-3");
   project4 = document.getElementById("project-4");
   project5 = document.getElementById("project-5");
+  project6 = document.getElementById("project-6");
 
   headerAboutMe = document.getElementById("header-about-me");
   headerProjects = document.getElementById("header-projects");
@@ -123,6 +128,9 @@ function traduzirPt() {
 
   project5.innerText =
     "Desenvolvi individualmente o projeto fullstack Pricefy, com foco na criação de uma aplicação web para comparação de preços entre mercados e geração de listas de compras otimizadas. Fui responsável por toda a estrutura e funcionalidades do sistema, desde o planejamento até o desenvolvimento comp aplicação. No backend, utilizei Java e Spring Boot para construção da API REST, autenticação co integração com banco de dados PostgreSQL. Já no frontend, desenvolvi as interfaces e realizei toda a comunica a API, garantindo uma experiência funcional e dinâmica para o usuário. O projeto reforço autonomia, organização e visão de desenvolvimento fullstack.";
+
+  project6.innerText =
+    "Desenvolvi individualmente o Projeto Agendamento, com foco na criação de uma API para experimentação e consolidação de conhecimentos em Java, Spring Boot e JUnit. Fui responsável por toda a estrutura e funcionalidades do sistema, desde o planejamento até a implementação completa da aplicação.No backend, utilizei Spring Boot para construção da API REST, autenticação com JWT e integração com banco de dados PostgreSQL. Também explorei recursos de LocalDate e LocalTime para manipulação de datas e horários em cenários reais, além de aplicar boas práticas de testes automatizados para garantir qualidade e cobertura de código. O projeto reforçou minha autonomia, organização e visão de desenvolvimento backend, servindo como um laboratório de aprendizado que poderá ser expandido para aplicações mais complexas no futuro.";
 
   subtitleBackend.innerText = "Backend";
   subtitleFrontend.innerText = "Frontend";
